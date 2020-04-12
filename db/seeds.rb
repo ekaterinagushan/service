@@ -18,6 +18,15 @@
  }
 ]
 
+warning = ["Большое количество сахара", "Аллерген", "Содержание добавок", "Большое количество красителей", "E-добавка", "Пальмовое масло"]
+
+warning.each do |warning|
+  e = ActiveWarning.create!(name: warning)
+end
+
+
+@tags = []
+
 def seed
  reset_db
  create_categories(@categories) # название метода и то, что мы запускаем
@@ -57,5 +66,6 @@ def create_category_product(category, product)
   p = category.products.create!(name:product)
   puts "Product with name #{p.name} just created in category with name #{p.category.name}"
 end
+
 
 seed
