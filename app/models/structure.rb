@@ -1,4 +1,4 @@
 class Structure < ApplicationRecord
-  belongs_to :Product
-  belongs_to :Ingredient
+  belongs_to :product
+  belongs_to :ingredient
 end

@@ -1,4 +1,4 @@
 class Ingredient < ApplicationRecord
-  has_many :Structures
-  has_many :Product, thought ::Structures
+  has_many :structures
+  has_many :products, through: :Structures
 end
