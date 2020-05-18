@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :parameters
+  resources :product_attentions
+  resources :actual_dangers
   resources :structures
   resources :ingredients
   resources :categories

@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Actual Dangers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @actual_dangers.each do |actual_danger| %>
+      <tr>
+        <td><%= actual_danger.name %></td>
+        <td><%= link_to 'Show', actual_danger %></td>
+        <td><%= link_to 'Edit', edit_actual_danger_path(actual_danger) %></td>
+        <td><%= link_to 'Destroy', actual_danger, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Actual Danger', new_actual_danger_path %>

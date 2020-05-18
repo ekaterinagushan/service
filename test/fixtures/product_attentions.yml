@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  actual_danger_id: 1
+  product_id: 1
+
+two:
+  actual_danger_id: 1
+  product_id: 1

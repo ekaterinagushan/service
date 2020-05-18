@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Actual danger:</strong>
+  <%= @product_attention.actual_danger_id %>
+</p>
+
+<p>
+  <strong>Product:</strong>
+  <%= @product_attention.product_id %>
+</p>
+
+<%= link_to 'Edit', edit_product_attention_path(@product_attention) %> |
+<%= link_to 'Back', product_attentions_path %>

@@ -10,7 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_12_234224) do
+ActiveRecord::Schema.define(version: 2020_04_26_113402) do
+
+  create_table "actual_dangers", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "categories", force: :cascade do |t|
     t.string "name"
@@ -26,15 +32,31 @@ ActiveRecord::Schema.define(version: 2020_04_12_234224) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "parameters", force: :cascade do |t|
+    t.integer "ingredient_id"
+    t.integer "actual_danger_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "product_attentions", force: :cascade do |t|
+    t.integer "actual_danger_id"
+    t.integer "product_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "products", force: :cascade do |t|
+    t.integer "category_id"
     t.string "name"
     t.text "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "category_id"
   end
 
   create_table "structures", force: :cascade do |t|
+    t.integer "product_id"
+    t.integer "ingredient_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

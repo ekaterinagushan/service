@@ -18,11 +18,11 @@
  }
 ]
 
-#warning = ["Большое количество сахара", "Аллерген", "Содержание добавок", "Большое количество красителей", "E-добавка", "Пальмовое масло"]
+dangers = ['Большое количество сахара', 'Аллерген', 'Содержание добавок', 'Большое количество красителей', 'Добавка', 'Пальмовое масло']
 
-#warning.each do |warning|
-#  e = ActiveWarning.create!(name: warning)
-#end
+dangers.each do |danger|
+  d = ActualDanger.create!(name: danger)
+end
 
 
 def seed
