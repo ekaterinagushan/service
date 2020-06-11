@@ -1,4 +1,4 @@
-.body {
+body {
   background-color: #FAFAFA;
 }
 
@@ -6,10 +6,17 @@ h1 {
   font-family: Roboto;
   font-size: 43px;
   z-index: 1;
+  font-weight: bolder;
 }
 
 h2 {
   font-family: Roboto;
+}
+
+.content h1 {
+  font-size: 45px;
+  z-index: 1;
+  font-weight: bolder;
 }
 
 .content p {
@@ -19,10 +26,10 @@ h2 {
 }
 
 .image {
-  display: flex;
-  z-index: 1;
-  margin-top: -10px;
-  margin-left: -90px;
+  //display: flex;
+//  z-index: 1;
+  //margin-top: -10px;
+  margin-left: -10px;
   width: 1024px;
   background-size: cover;
 }
@@ -53,7 +60,7 @@ a {
     margin-left: 370px;
 }
 
-.content a {
+ a {
   font-family: Roboto;
   text-decoration: none;
   display: block;
@@ -63,12 +70,27 @@ a {
   border-radius: 40px;
   background: #70A928;
   font-size: 26px;
+  text-align: center;
+
+}
+
+.content .buttons {
+  position: absolute;
+  margin-left: 100px;
+}
+
+.info {
+  //margin-top: 300px;
 }
 
 .info h2 {
   font-size: 35px;
   margin-top: 128px;
   margin-left: 341px;
+}
+
+.info .info-img {
+  margin-top: 40px;
 }
 
 .info .info-logo img {
@@ -79,8 +101,8 @@ a {
 
 .info .info-img img {
   transform: rotate(90deg);
-  margin-left: -80px;
   margin-top: -100px;
+  width: 550px;
 }
 
 .info .text p {
@@ -91,6 +113,119 @@ a {
 }
 
 .text {
-  margin-top: -580px;
-  margin-left: 750px;
+  margin-top: -480px;
+  margin-left: 650px;
+}
+
+.img-2 {
+  margin-top: 169px;
+}
+
+.about {
+  height: 750px;
+}
+
+.about .about_image {
+  margin-left: 380px;
+  margin-top: 79px;
+}
+
+.first {
+  margin-left: 73px;
+  margin-top: -670px;
+}
+
+.about h1 {
+  font-size: 20px;
+  color: #70A928;
+}
+
+.about p {
+ width: 340px;
+ margin-top: 20px;
+ line-height: 1.5;
+}
+
+.about .about_image {
+  margin-bottom: 196px;
+}
+
+.second {
+  margin-top: 66px;
+  margin-left: 73px;
+}
+
+.third {
+  margin-left: 1040px;
+  margin-top: -400px;
+}
+
+.third h1 {
+  width: 400px;
+}
+
+.fourth {
+  margin-left: 1040px;
+  margin-top: 110px;
+}
+
+.fourth h1 {
+  width: 200px;
+}
+
+.login {
+  color: white;
+  z-index: 3;
+  height: 423px;
+}
+
+.login h1 {
+  font-size: 45px;
+  z-index: 1;
+  font-weight: bolder;
+  margin-top: -350px;
+  width: 800px;
+  margin-left: 400px;
+}
+
+.login p {
+  margin-left: 350px;
+  margin-top: 30px;
+  width: 800px;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.login a {
+  position: absolute;
+  margin-left: 565px;
+}
+
+.products h1 {
+  color: black;
+  margin-top: 113px;
+  margin-left: 300px;
+  width: 900px;
+}
+
+.products .product_1 {
+  margin-top: 69px;
+  margin-left: 78px;
+}
+
+.products .product_2 {
+  margin-top: -402px;
+  margin-left: 519px
+}
+
+.products .product_3 {
+  margin-top: -402px;
+  margin-left: 961px;
+}
+
+.products .product_1 .img {
+  position: absolute;
+  margin-left: 80px;
+  margin-top: -370px;
 }
